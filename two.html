@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Malora Atelier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #F2E8E2;
+      color: #4B0F1F;
+    }
+    header {
+      font-family: 'Playfair Display', serif;
+      background-color:#4B0F1F;
+      padding: 1px;
+      text-align: center;
+      color:  #D6B370;
+      font-weight: bolder;
+      font-size: 20px;
+    }
+    .malora-bar{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: #F2E8E2;
+    }
+    .malora-bar h1{
+        font-family: 'Playfair Display', serif;
+        margin:0 auto;
+        font-size: 50px;
+        font-weight:bolder;
+        text-align: center;
+        color : #4B0F1F ;
+    }
+    .icons {
+        display: flex;
+        gap: 10px;
+    }
+    .icons img{
+        width: 30px;
+        height: 30px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: bolder;
+      font-size: 48px;
+      margin: 0;
+      color: #4B3F2F;
+    }
+    nav {
+      background-color: #F2E8E2;
+      padding: 10px 1px;
+      text-align: center;
+      margin: 10px;
+    }
+   nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #4B0F1F;
+  font-size: 20px;
+  padding: 5px 10px; 
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #D6B370; 
+  color: white; 
+  transform: scale(1.05); 
+}
+
+    .bar {
+      font-family: 'Playfair Display', serif;
+      font-weight: bolder;
+      display: flex;
+      height: 400px;
+      margin-left: 20px;
+      margin-right: 20px;
+      border: 5px #D6B370;
+      background-color: #4B0F1F;
+      margin-bottom: 20px;
+    }
+    .img {
+      height: 100%;
+      width: 50%;
+      object-fit: cover;
+    }
+
+    .text {
+      font-family: 'Playfair Display', serif;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      color: #D6B370;
+      font-size: 30px;
+      font-weight: bolder;
+    }
+    .bar hr {
+      border: none;
+      height: 2px;
+      background-color: #D6B370;
+      width: 50%; 
+    }
+    .btn {
+      font-family: 'Playfair Display', serif;
+      display: inline-block;
+      background: #F2E8E2;
+      color: #4B0F1F;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .btn:hover {
+      background-color: #B08D57; 
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #D6B370;
+      border-radius: 10px;
+      margin: 10px;
+      width: 300px;
+      height: 650px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      height: 60%;
+      border-bottom: 1px solid #ddd;
+      border-radius: 10px;
+    }
+    .product-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 24px;
+      margin: 10px 0;
+      color: #2F3E46;
+    }
+    .product-card p {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      padding: 0 2px 2px;
+      color :#2C2A27;
+    }
+    .product-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+    .newsletter {
+      background-color: #F2E8E2;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .newsletter input[type="email"] {
+      font-family: 'Playfair Display', serif;
+      padding: 10px;
+      width: 300px;
+      max-width: 80%;
+      border: 1px solid #4B0F1F;
+      border-radius: 3px;
+      margin-right: 10px;
+    }
+    .newsletter button {
+      font-family: 'Playfair Display', serif;
+      padding: 10px 20px;
+      background-color: #4B0F1F;
+      color: #D6B370;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    footer {
+      font-family: 'Playfair Display', serif;
+      background-color: #4B0F1F;
+      color: #D6B370;
+      text-align: left;
+      padding: 20px;
+      display: flex;
+      gap: 400px;
+    }
+    footer img{
+      width: 25%;
+    }
+    h2{
+      font-family: 'Playfair Display', serif;
+      font-weight: bolder;
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>High Quality <span>|</span> Luxury Gifts </h1>
+  </header>
+  <div class="malora-bar">
+   <h1><span>⚜️ Malora Atelier ⚜️</span></h1>
+   <div class="icons">
+   <img src="facebook.png" alt="fb">
+   <img src="instagram.png" alt="insta">
+   <img src="twitter.png" alt="x">
+   <img src="shopping-bag.png" alt="basket">
+</div>
+  </div>
+  <nav>
+    <a href="two.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="product.html">Product</a>
+    <a href="livesshow.html">Live Show</a>
+    <a href="calltoactionn.html">Call To Action</a>
+  </nav>
+
+  <div class="bar">
+    <img src="header.jpg" class="img">
+    <div class="text">
+      <p>THE SUMMER SALE </p>
+      <hr>
+      <p>25% OFF EVERYTHING</p>
+      <a href="salon.html" class="btn">shop now</a>
+    </div>
+  </div>
+<h2 style="text-align: center;">🤎 Descover Our Salons 🤎 </h2>
+  <section class="products">
+    <div class="product-card">
+      <img src="oldmoney.jpg" alt="oldmoney">
+      <h3>Old Money Salon</h3>
+      <p>A complete set inspired by the art of discreet luxury and classic taste.</p>
+      <p>-Two Sofas, Coffe Table, Armchair, Side Table-</p>
+      <p style="color: red;"> 500000DA</p>
+      <a href="calltoaction.html" class="btn">shop now</a>
+    </div>
+    <div class="product-card">
+      <img src="paris.jpg" alt="paris salon">
+      <h3>Paris Salon</h3>
+      <p>A complete set inspired by the art of Parisian charm and soft sophistication.</p>
+      <p>-Big Sofa, Individuel Sofa, Coffe Table, Chaise Longue-</p>
+      <p style="color: red;"> 550000DA</p>
+      <a href="calltoaction.html" class="btn">shop now</a>
+    </div>
+    <div class="product-card">
+      <img src="japanese.jpg" alt="Salon Parisien">
+      <h3>Japanese Salon</h3>
+      <p>A complete set inspired by the art of minimalist Japanese living.</p>
+      <p>-Two Sofas, Coffe Table, Floor Pillows, Accent Chair-</p>
+      <p style="color: red;"> 250000DA</p>
+      <a href="calltoaction.html" class="btn">shop now</a>
+    </div>
+    <div class="product-card">
+      <img src="calm.salon.jpg" alt="calme salon">
+      <h3>Calm Salon</h3>
+      <p>A complete set inspired by the art of serene tones and peaceful comfort.</p>
+      <p>-U Floor Couch, Coffe Table, Floor Pillows, Fourniture Table-</p>
+      <p style="color: red;"> 350000DA</p>
+      <a href="calltoaction.html" class="btn">shop now</a>
+    </div>
+    <div class="product-card">
+      <img src="classic.salon.jpg" alt="classic salon">
+      <h3>Clasic Salon</h3>
+      <p>A complete set inspired by the art of timeless elegance.</p>
+      <p>-Big Sofa, two couple sofa, Coffe Table-</p>
+      <p style="color: red;"> 300000DA</p>
+      <a href="calltoaction.html" class="btn">shop now</a>
+    </div>
+    <div class="product-card">
+      <img src="cozy.salon.jpg" alt="cozy salon">
+      <h3>Cozy Salon</h3>
+      <p>A complete set inspired by the art of warmth, softness, and homey vibes.</p>
+      <p>-Cozy Couch, Armchair, Floor Pillow-</p>
+      <p style="color: red;"> 150000DA</p>
+      <a href="calltoaction.html" class="btn">shop now</a>
+    </div>
+    <div class="product-card">
+      <img src="formal.salon.jpg" alt="formal salon">
+      <h3>Formal Salon</h3>
+      <p>A complete set inspired by the art of refined hosting and elegant gatherings.</p>
+      <p>-3 Sofa, Coffe Table, Fourniture Table</p>
+      <p style="color: red;"> 400000DA</p>
+      <a href="calltoaction.html" class="btn">shop now</a>
+    </div>
+    <div class="product-card">
+      <img src="golden.salon.jpg" alt="golden salon">
+      <h3>Golden Salon</h3>
+      <p>A complete set inspired by the art of golden luxury and lavish details.</p>
+      <p>-Two couches, Coffe table-</p>
+      <p style="color: red;"> 200000DA</p>
+      <a href="calltoaction.html" class="btn">shop now</a>
+    </div>
+  </section>
+  <h2 style="text-align: center;">🤎 Descover Our Bedrooms 🤎</h2>
+  <section class="products">
+    <div class="product-card">
+      <img src="princess.bedroom.jpg" alt="princess bedroom">
+      <h3>Princess Bedroom</h3>
+      <p>-Double bed with Two nightstands-</p>
+      <p style="color: red;"> 100000DA</p>
+      <a href="calltoaction.html" class="btn">shop now</a>
+    </div>
+    <div class="product-card">
+      <img src="sea.bedroom.jpg" alt="Sea bedroom">
+      <h3>Sea Bedroom</h3>
+      <p>-Double bed with Two nightstands-</p>
+      <p style="color: red;"> 90000DA</p>
+      <a href="calltoaction.html" class="btn">shop now</a>
+    </div>
+    <div class="product-card">
+      <img src="modern.bedroom.jpg" alt="modern bedroom">
+      <h3>Modern Bedroom</h3>
+      <p>-Double bed with Two nightstands-</p>
+      <p style="color: red;"> 100000DA</p>
+      <a href="calltoaction.html" class="btn">shop now</a>
+    </div>
+    <div class="product-card">
+      <img src="royal.bedroom.jpg" alt="royal bedroom">
+      <h3>Royal Bedroom</h3>
+      <p>-Double bed with Two nightstands-</p>
+      <p style="color: red;"> 110000DA</p>
+      <a href="calltoaction.html" class="btn">shop now</a>
+    </div>
+  </section>
+</section>
+<h2 style="text-align: center;">🤎 Descover Our New Packajing 🤎</h2>
+<section class="products">
+  <div class="product-card">
+    <img src="baby1.jpg" alt="baby 1">
+    <h3>Blue Baby Room</h3>
+    <p>Give your baby the comfort with a beautifully designed room made just for them.</p>
+    <p style="color: red;"> 70000DA</p>
+    <a href="calltoaction.html" class="btn">shop now</a>
+  </div>
+  <div class="product-card">
+    <img src="baby2.jpg" alt="baby 2">
+    <h3>Pink Baby Room</h3>
+    <p>A special room helps your little one grow in a space filled with warmth, love, and creativity.</p>
+    <p style="color: red;"> 60000DA</p>
+    <a href="calltoaction.html" class="btn">shop now</a>
+  </div>
+  <div class="product-card">
+    <img src="baby3.jpg" alt="baby 3">
+    <h3>Green Baby Room</h3>
+    <p>Investing in a baby’s room means creating unforgettable memories from day one.</p>
+    <p style="color: red;"> 50000DA</p>
+    <a href="calltoaction.html" class="btn">shop now</a>
+  </div>
+  <div class="product-card">
+    <img src="baby5.jpg" alt="baby 4">
+    <h3>Sun Baby Room</h3>
+    <p>Every baby deserves a cozy, stylish space that reflects how deeply they are loved.</p>
+    <p style="color: red;"> 90000DA</p>
+    <a href="calltoaction.html" class="btn">shop now</a>
+  </div>
+</section>
+
+  <section class="newsletter">
+    <h2>Subscribe to our newsletter</h2>
+    <p>Get the latest news and special offers delivered straight to your inbox.</p>
+    <input type="email" placeholder="Your e-mail adress">
+    <button>Follow</button>
+  </section>
+
+  <footer>
+    <div>
+    <p>📍 Adress : 12 Rue de la Beauté, Alger, Algérie</p>
+    <p>📞 Phone NUmber : +213 5 52 94 39 32</p>
+    <p>Email : contact@maisonelegante.com</p>
+    <p>&copy; 2025 Malora Atelier. All rights reserved.</p>
+    </div>
+    <div><img src="logo.png" alt="logo"></div>
+  </footer>
+
+</body>
+</html>

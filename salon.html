@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Malora - Salon</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    body {
+      margin: 0;
+      color: #fff;
+      font-family: sans-serif;
+      background-color: #111;
+    }
+
+    .hero {
+      background-image: url('salonwallpaper.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #B08D57;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+
+    .hero h1, .hero h2 {
+      z-index: 1;
+      margin: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 80px;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-top: 20px;
+      font-weight: bolder;
+    }
+
+    .section-title {
+      font-size: 60px;
+      color: #D6C3A5;
+      text-align: center;
+      margin-top: 80px;
+      margin-bottom: 30px;
+      font-family: 'Great Vibes', cursive;
+      font-weight: bolder;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px 80px;
+    }
+
+    .card {
+      background-color: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      text-align: center;
+      color: #eee;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card .info {
+      padding: 15px;
+    }
+
+    .price {
+      color: #B08D57;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #ccc;
+    }
+    .shop-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #B08D57;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #d6c3a5;
+  transform: scale(1.05);
+  color: #111;
+}
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Elevate Your Salon</h1>
+    <h2>Discover the finest pieces to style your living space</h2>
+  </div>
+  <h2 class="section-title">Sofas</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="1.jpg" alt="Sofa 1">
+      <div class="info">
+        <div class="price">12,000 DZD</div>
+        <div class="desc">Luxury new model 1 2 3 european design royal leather sofa set</div>
+        <a href="calltoaction.html" class="shop-button">Shop Now</a>
+    </div>
+    </div>
+    <div class="card">
+      <img src="11.jpg" alt="Sofa 2">
+      <div class="info">
+        <div class="price">15,0000 DZD</div>
+        <div class="desc">Wooden carved classic leather and fabric grey sofa set</div>
+        <a href="calltoaction.html" class="shop-button">Shop Now</a>
+      </div>
+    </div>
+    <div class="card">
+        <img src="10.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">20,0000 DZD</div>
+          <div class="desc">Gold silk long couch chair comfy for sale</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="9.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">16,0000 DZD</div>
+          <div class="desc">Elegant calssic carving living room furniture 6seater fabric sofa set</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="8.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">13,0000 DZD</div>
+          <div class="desc">Comfort cream couch set sale american design</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="7.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">14,0000 DZD</div>
+          <div class="desc">Retro style living room furniture fabric couch for sale</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716602_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">21,0000 DZD</div>
+          <div class="desc">Looking living room furniture grey fabric sofa carved couch</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="2.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">17,0000 DZD</div>
+          <div class="desc">Velvet couch sofa sette living room furniture</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+  </div>
+
+  <h2 class="section-title">Armchair</h2>
+  <div class="gallery">
+      <div class="card">
+        <img src="a.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">90,000 DZD</div>
+          <div class="desc">Beige ,Soft and cozy armchair for your comfert</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="b.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">80,000 DZD</div>
+          <div class="desc">Creamy modern ,frensh design , elegant armchair</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="c.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">70,000 DZD</div>
+          <div class="desc">Brown armchair Thick and comfortable cushions</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="i.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">85,000 DZD</div>
+          <div class="desc">Rose armchair Perfect for reading and relaxing</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="h.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">10,000 DZD</div>
+          <div class="desc">Classic italien new fabric royal green armchair</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="e.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">12,000 DZD</div>
+          <div class="desc">Royal classic design elegant armchair cream fabric</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="f.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">11,000 DZD</div>
+          <div class="desc">Rayal blue classic carved armchair furniture set</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="g.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">12,500 DZD</div>
+          <div class="desc">Grey turkich design armchair furniture set</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+  </div>
+
+  <h2 class="section-title"> Coffee Tables </h2>
+  <div class="gallery">
+      <div class="card">
+        <img src="5830204503167716543_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">5,000 DZD</div>
+          <div class="desc">Sturdy high quality wooden base</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716562_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">5,000 DZD</div>
+          <div class="desc">Neutral wood color matchs any décor</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716572_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">6,000 DZD</div>
+          <div class="desc">Simple and stylish turkish desing </div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716571_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">9,000 DZD</div>
+          <div class="desc">Ideal for drinks, books, or flowers</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716599_109.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">8,000 DZD</div>
+          <div class="desc">Timeless piece for your living room </div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716593_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">7,500 DZD</div>
+          <div class="desc">Elegant class top with golden material</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716578_120 - Copy.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">6,500 DZD</div>
+          <div class="desc">Fits perfectly in small spaces</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="coffe.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">9,000 DZD</div>
+          <div class="desc">Sleek and modern coffe table</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+  </div>
+
+  <h2 class="section-title">TV Stands</h2>
+  <div class="gallery">
+      <div class="card">
+        <img src="5830204503167716555_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">8,500 DZD</div>
+          <div class="desc">It blends beuty with function</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716609_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">95000 DZD</div>
+          <div class="desc">The shelves hold devices and decore</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716544_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">1,0000 DZD</div>
+          <div class="desc">Adds a touch of elegance to the room</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716589_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">5,000 DZD</div>
+          <div class="desc">Suits large and small TVs</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716594_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">8,500 DZD</div>
+          <div class="desc">Made with high quality wood</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716600_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">5,000 DZD</div>
+          <div class="desc">Clean and minimal design</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716587_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">8,000 DZD</div>
+          <div class="desc">It offers smart storage space</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716576_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">9,000 DZD</div>
+          <div class="desc">Blue sleek and modern Tv stands</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+  </div>
+
+  <h2 class="section-title"> Vase Tables </h2>
+  <div class="gallery">
+      <div class="card">
+        <img src="5830204503167716547_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">2,500 DZD</div>
+          <div class="desc">Vase tables are decorative furniture pieces designed to display vases elegantly in a room.</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716585_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">2,000 DZD</div>
+          <div class="desc">They are usually small, narrow tables placed against walls or in corners to enhance interior aesthetics.</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716583_120.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">3,000 DZD</div>
+          <div class="desc">Vase tables can be made from wood, metal, or glass and often feature intricate designs or carvings.</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="5830204503167716590_121.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">1,000 DZD</div>
+          <div class="desc"> They add a touch of sophistication and help highlight floral arrangements or artistic vases.</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

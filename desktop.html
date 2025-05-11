@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Malora - Salon</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    body {
+      margin: 0;
+      color: #fff;
+      font-family: sans-serif;
+      background-color: #0D0B07;
+    }
+
+    .hero {
+      background-image: url('desktop2.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #B08D57;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.2);
+      z-index: 0;
+    }
+
+    .hero h1, .hero h2 {
+      z-index: 1;
+      margin: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 80px;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-top: 20px;
+      font-weight: bolder;
+    }
+
+    .section-title {
+      font-size: 60px;
+      color: #D2B48C;
+      text-align: center;
+      margin-top: 80px;
+      margin-bottom: 30px;
+      font-family: 'Great Vibes', cursive;
+      font-weight: bolder;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px 80px;
+    }
+
+    .card {
+      background-color: #2A1B0F;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      text-align: center;
+      color: #4B3621;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card .info {
+      padding: 15px;
+    }
+
+    .price {
+      color: #D2B48C;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #ccc;
+    }
+    .shop-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #D2B48C;
+  color: #0D0B07;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #d6c3a5;
+  transform: scale(1.05);
+  color: #111;
+}
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Office Room</h1>
+    <h2>Discover the finest pieces to style your working space</h2>
+  </div>
+  <h2 class="section-title">Desk</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="D1.jpg" alt="Sofa 1">
+      <div class="info">
+        <div class="price">15,0000 DZD</div>
+        <div class="desc">Luxury new model desk</div>
+        <a href="calltoaction.html" class="shop-button">Shop Now</a>
+    </div>
+    </div>
+    <div class="card">
+      <img src="D2.jpg" alt="Sofa 2">
+      <div class="info">
+        <div class="price">16,0000 DZD</div>
+        <div class="desc">Wooden classic desk</div>
+        <a href="calltoaction.html" class="shop-button">Shop Now</a>
+      </div>
+    </div>
+    <div class="card">
+        <img src="D3.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">17,0000 DZD</div>
+          <div class="desc">Italien design desk</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D4.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">16,5000 DZD</div>
+          <div class="desc">Elegant calssic desk</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D5.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">18,2000 DZD</div>
+          <div class="desc">Old money style desk</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D6.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">14,1000 DZD</div>
+          <div class="desc">Retro style desk</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D7.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">13,2000 DZD</div>
+          <div class="desc">Spanish wood desk</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D8.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">16,000 DZD</div>
+          <div class="desc">Vintage, elegant desk</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+  </div>
+
+  <h2 class="section-title">Bookshelf</h2>
+  <div class="gallery">
+      <div class="card">
+        <img src="B1.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">20,0000 DZD</div>
+          <div class="desc">Small bookshelf</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="B2.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">21,0000 DZD</div>
+          <div class="desc">Modern bookshelf</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="B3.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">22,0000 DZD</div>
+          <div class="desc">Round bookshelf</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="B4.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">21,5000 DZD</div>
+          <div class="desc">Maze bookshelf</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="B5.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">21,0000 DZD</div>
+          <div class="desc"> Classic bookshelf </div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="B6.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">19,2000 DZD</div>
+          <div class="desc">Lighting bookshelf</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="B7.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">22,0000 DZD</div>
+          <div class="desc">Green bookshelf</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="B8.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">20,0000 DZD</div>
+          <div class="desc">Vintage bookshelf</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

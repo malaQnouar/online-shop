@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Requests</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background-color:#F2E8E2 ; 
+    }
+
+    .form-wrapper {
+      background-color: #4B0F1F; 
+      max-width: 600px;
+      margin: 80px auto;
+      padding: 40px;
+      border-radius: 16px;
+      border: 1px solid #D6C3A5; 
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 30px;
+      color: #D6C3A5; 
+      border-bottom: 2px solid #D6C3A5;
+      padding-bottom: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      font-size: 15px;
+      color: #D6C3A5; 
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      border: 1px solid #D6C3A5; 
+      border-radius: 8px;
+      font-family: 'Georgia', serif;
+      background-color: #F2E8E2; 
+      color: #2C2A27; 
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #2C2A27; 
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background-color: #D6C3A5; 
+      color: #2C2A27; 
+      padding: 14px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      cursor: pointer;
+      
+    }
+
+    .submit-btn:hover {
+      background-color: #B08D57; 
+    }
+
+    
+    select, input, textarea {
+      border: 1px solid #D6C3A5; 
+    }
+
+    .submit-btn {
+      background-color: #D6C3A5; 
+    }
+
+    .submit-btn:hover {
+      background-color: burlywood; 
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="form-wrapper">
+    <h2>🤍We Give Life to Your Inspiration🤍</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Clara Windsor" required>
+      </div>
+
+      <div class="form-group">
+        <label for="city">Your City</label>
+        <input type="text" id="city" name="city" placeholder="e.g. Algiers" required>
+      </div>
+
+      <div class="form-group">
+        <label for="delivery">What Item Would You Like</label>
+        <select id="object" name="object" required>
+          <option value="">Choose an option</option>
+          <option value="home">Sofas</option>
+          <option value="pickup">Bed</option>
+          <option value="pickup">Desktop</option>
+          <option value="pickup">Table</option>
+          <option value="pickup">closet</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. +213..." required>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Describe It</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Any special requests?"></textarea>
+      </div>
+
+      <a href="relate.html" class="submit-btn">Confirm Order</a>
+    </form>
+  </div>
+
+</body>
+</html>

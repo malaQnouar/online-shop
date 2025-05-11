@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Malora - Salon</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    body {
+      margin: 0;
+      color: #fff;
+      font-family: sans-serif;
+      background-color: #E8C4A6;
+    }
+
+    .hero {
+      background-image: url('homeaccs.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #2F3E1F;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.2);
+      z-index: 0;
+    }
+
+    .hero h1, .hero h2 {
+      z-index: 1;
+      margin: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 80px;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-top: 20px;
+      font-weight: bolder;
+    }
+
+    .section-title {
+      font-size: 60px;
+      color: #6A4E3C;
+      text-align: center;
+      margin-top: 80px;
+      margin-bottom: 30px;
+      font-family: 'Great Vibes', cursive;
+      font-weight: bolder;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px 80px;
+    }
+
+    .card {
+      background-color: #F3DCCB;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      text-align: center;
+      color: whitesmoke;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card .info {
+      padding: 15px;
+    }
+
+    .price {
+      color: #5E4B3C;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #5E4B3C;
+    }
+    .shop-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #B88D8D;
+  color: whitesmoke;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #d6c3a5;
+  transform: scale(1.05);
+  color: #111;
+}
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Accessorize your home</h1>
+    <h2>Discover the finest pieces to style your living space</h2>
+  </div>
+  <h2 class="section-title"> Candels </h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="H1.jpg" alt="Sofa 1">
+      <div class="info">
+        <div class="price">500 DZD</div>
+        <div class="desc">Light your home</div>
+        <a href="calltoaction.html" class="shop-button">Shop Now</a>
+    </div>
+    </div>
+    <div class="card">
+      <img src="H2.jpg" alt="Sofa 2">
+      <div class="info">
+        <div class="price">600 DZD</div>
+        <div class="desc">Light your home</div>
+        <a href="calltoaction.html" class="shop-button">Shop Now</a>
+      </div>
+    </div>
+    <div class="card">
+        <img src="H3.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">920 DZD</div>
+          <div class="desc">Light your home</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="H4.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">650 DZD</div>
+          <div class="desc">Light your home</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="H5.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">500 DZD</div>
+          <div class="desc">Light your home </div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="H6.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">200 DZD</div>
+          <div class="desc">Light your home</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="H7.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">500 DZD</div>
+          <div class="desc">Light your home</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="H8.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">900 DZD</div>
+          <div class="desc">Light your home</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+  </div>
+  <h2 class="section-title">Mirrors</h2>
+  <div class="gallery">
+      <div class="card">
+        <img src="M1.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">40,00 DZD</div>
+          <div class="desc">To adore your reflection</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="M2.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">30,00 DZD</div>
+          <div class="desc">To adore your reflection</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="M3.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">78,00 DZD</div>
+          <div class="desc">To adore your reflection</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="M4.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">98,00 DZD</div>
+          <div class="desc">To adore your reflection</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="M6.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">8,000 DZD</div>
+          <div class="desc">To adore your reflection </div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="M7.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">97,00 DZD</div>
+          <div class="desc">To adore your reflection</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="M8.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">98,00 DZD</div>
+          <div class="desc">To adore your reflection</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="M9.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">98,00 DZD</div>
+          <div class="desc">To adore your reflection</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+  </div>
+
+
+
+
+  <h2 class="section-title">Chandelies</h2>
+  <div class="gallery">
+      <div class="card">
+        <img src="L1.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">98,000 DZD</div>
+          <div class="desc">To sparkle your lightness</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="L2.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">89,000 DZD</div>
+          <div class="desc">To sparkle your lightness</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="L3.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">76,000 DZD</div>
+          <div class="desc">To sparkle your lightness</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="L4.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">56,000 DZD</div>
+          <div class="desc">To sparkle your lightness</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="L5.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">12,000 DZD</div>
+          <div class="desc">To sparkle your lightness</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="L6.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">21,000 DZD</div>
+          <div class="desc">To sparkle your lightness</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="L7.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">34,000 DZD</div>
+          <div class="desc">To sparkle your lightness</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="L8.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">43,000 DZD</div>
+          <div class="desc">To sparkle your lightness</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      </div>
+
+
+
+
+      <h2 class="section-title">Wall Frames </h2>
+  <div class="gallery">
+      <div class="card">
+        <img src="W1.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">900 DZD</div>
+          <div class="desc">To add life to your walls</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="W2.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">800 DZD</div>
+          <div class="desc">To add life to your walls</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="W3.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">700 DZD</div>
+          <div class="desc">To add life to your walls</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="W4.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">500 DZD</div>
+          <div class="desc">To add life to your walls</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+  </div>
+  <h2 class="section-title">Plants</h2>
+  <div class="gallery">
+      <div class="card">
+        <img src="P1.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">900 DZD</div>
+          <div class="desc">To add life to your rooms</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="P2.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">800 DZD</div>
+          <div class="desc">To add life to your rooms</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="P3.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">700 DZD</div>
+          <div class="desc">To add life to your rooms</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="P4.jpg" alt="Sofa 2">
+        <div class="info">
+          <div class="price">500 DZD</div>
+          <div class="desc">To add life to your rooms</div>
+          <a href="calltoaction.html" class="shop-button">Shop Now</a>
+        </div>
+      </div>
+  </div>
+
+  
+</body>
+</html>
